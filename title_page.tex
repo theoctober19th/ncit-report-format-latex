@@ -1,3 +1,16 @@
+%Replace Strings:
+%PROJECT.TITLE
+%PROJECT.AUTHOR.DEGREE
+%PROJECT.AUTHOR1.NAME
+%PROJECT.AUTHOR2.NAME
+%PROJECT.AUTHOR3.NAME
+%PROJECT.AUTHOR1.ROLL
+%PROJECT.AUTHOR2.ROLL
+%PROJECT.AUTHOR3.ROLL
+%PROJECT.SUPERVISOR.NAME
+%PROJECT.REPORT.SUBMISSION.DATE
+%PROJECT.AUTHOR.DEPARTMENT
+
 \documentclass[12pt, a4paper]{report}
 
 % gives the margin to the page for entire document
@@ -24,32 +37,32 @@
 	A Major/Minor Project on
 	
 	\huge %24pt
-	\textbf {\{Project Title\}}
+	\textbf{PROJECT.TITLE}
 
 	\vfill
 	
 	\large %14pt
 	Submitted in Partial Fulfillment of the \\ 
 	Requirements for the Degree of \\ 
-	\textbf {\{Author's Degree\}} \\
+	\textbf {PROJECT.AUTHOR.DEGREE} \\
 	under Pokhara University
 	
 	\vfill
 	
 	Submitted by: \\ 
-	\textbf {\{Author1 Name\}, \{Roll Number\}} \\
-	\textbf {\{Author2 Name\}, \{Roll Number\}} \\
-	\textbf {\{Author3 Name\}, \{Roll Number\}} \\
+	\textbf {PROJECT.AUTHOR1.NAME, PROJECT.AUTHOR1.ROLL} \\
+	\textbf {PROJECT.AUTHOR2.NAME, PROJECT.AUTHOR2.ROLL} \\
+	\textbf {PROJECT.AUTHOR3.NAME, PROJECT.AUTHOR3.ROLL} \\
 	
 	\vfill
 	
 	Under the supervision of: \\
-	\textbf {\{Supervisor Name\}}
+	\textbf {PROJECT.SUPERVISOR.NAME}
 	
 	\vfill
 	
 	Date: \\
-	\textbf {dd MMM yyyy}
+	\textbf {PROJECT.REPORT.SUBMISSION.DATE}
 	
 	\vfill
 	
@@ -62,7 +75,7 @@
 	
 	\fontfamily{phv}\selectfont
 	
-	\textbf {\{Department of XYZ\}}  
+	\textbf {Department of PROJECT.AUTHOR.DEPARTMENT}  
 	
 	\Large %17pt
 	\textbf {NEPAL COLLEGE OF} 

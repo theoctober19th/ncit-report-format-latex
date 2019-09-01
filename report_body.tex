@@ -3,39 +3,119 @@
 %TODO.CHANGE
 %PROJECT.ABSTRACT.KEYWORDS
 
-\documentclass[12pt, a4paper]{book}
+\documentclass[12pt, a4paper, oneside]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[bindingoffset=1.57cm, left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm]{geometry}
 \usepackage{mathptmx}
 \usepackage{fancyhdr}
 \usepackage{lipsum}
+\usepackage{secdot}
+\usepackage{lastpage}
+\usepackage{cite}
+
+\usepackage{tocloft}
 
 \linespread{1.2}
 \pagestyle{fancy}
 \fancyhf{} % sets both header and footer to nothing
 \renewcommand{\headrulewidth}{0pt}
-\rhead{ \textit{PROJECT.TITLE}}
+\rhead{ \textit{TreasureNepal2020: A Treasure Hunt Application}}
 \cfoot{\thepage}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{12pt}
 
-\frontmatter
+%\frontmatter
 
 \begin{document}
 
+\pagenumbering{roman}
+\addcontentsline{toc}{section}{Abstract}
 \large
 \begin{center}
 	\textbf{ABSTRACT}
 \end{center}
 
 \normalsize
-\lipsum[2-4] \\%TODO.CHANGE
+The students are required to come up with a conceptual framework for their project work which must be documented in the form of a Proposal and must duly signed by the supervisor. Besides the supervisors’ approval, project teams should submit the proof of guidance taken from the supervisor (e.g. Meeting Log). See Appendix B of this guideline for the sample. The proposal must be presented in a presentation and get approved from the panel of the examiners. The presentation for proposal defense will be of 10 (Ten) minutes. 
 
-\textbf{Keywords}: PROJECT.ABSTRACT.KEYWORDS
+The students are required to come up with a conceptual framework for their project work which must be documented in the form of a Proposal and must duly signed by the supervisor. Besides the supervisors’ approval, project teams should submit the proof of guidance taken from the supervisor (e.g. Meeting Log). See Appendix B of this guideline for the sample. The proposal must be presented in a presentation and get approved from the panel of the examiners. The presentation for proposal defense will be of 10 (Ten) minutes. 
+
+The students are required to come up with a conceptual framework for their project work which must be documented in the form of a Proposal and must duly signed by the supervisor. Besides the supervisors’ approval, project teams should submit the proof of guidance taken from the supervisor (e.g. Meeting Log). See Appendix B of this guideline for the sample. The proposal must be presented in a presentation and get approved from the panel of the examiners.
+
+\textbf{Keywords}: TreasureNepal2020, TreasureHunt, Android, Game\\
 
 \break
 
+\large
+\begin{center}
+	\textbf{TABLE OF CONTENTS}
+\end{center}
+
+
+\normalsize
+\setlength{\cftbeforetoctitleskip}{0pt}
+\renewcommand{\contentsname}{}
+\tableofcontents
+
+\break
+
+%\mainmatter
+\cfoot{\textbf{\thepage} /  \pageref{LastPage}}
+
+\pagenumbering{arabic}
+\section{Introduction} 
+TreasureNepal2020 is a mobile application for a treasure hunt game proposed to be tailored for tourists visiting Nepal in the year 2020. With the view of encouraging tourists to visit remote and unexplored part of the country, the application aims to increase the traffic of tourist in such locations as well as promote their tourism. This document looks forward to providing essential information about the needs, scope, objectives and proposed methodology of the application.
+
+\subsection{Problem Statement}
+Tourism has a great potential to contribute to the Gross Domestic Product (GDP) of Nepal, but having observations at the statistics, the ratio of contribution of tourism to GDP is not satisfactory. According to Nepal Rastra Bank, the total conbtribution of the foreign exchange from tourism to the total Gross Domestic Product (GDP) of Nepal was 2.2\% in the year 2017/18. \cite{tourismstats}.
+
+Tourism in Nepal is largely centralized to a few popular destinations. The places like Kathmandu, Pokhara, Chitwan, Annapurna area and Everest area are largely flocked by tourists while destinations like Rara Lake, Shey Phoksundo National Park or Khaptad National park struggle to get satisfactory inflow of traffic. This decentralisation of tourism has largely underestimated the potential and beauty of many travel destinations, specially in remote areas. In addition, as majority of people in such places rely solely on tourism industry for their livelihood, this problem has pushed those communities even further down below the poverty line.
+
+The Government of Nepal has taken efforts to celebrate the year 2020 officially as the Visit Nepal Year 2020. At the brim of year 2020, the authors have proposed to build a treasure hunt application specially tailored for the tourists to get their attention to unexplored and remote tourism destinations of Nepal.
+
+\subsection{Project Objectives}
+The proposed project has put forward the following objectives:
+
+\begin{itemize}
+	\item To decentralize the tourism industry and encourage uniform flow of tourists at various destinations across Nepal.
+	\item To promote and encourage the tourism in remote and novel destinations which otherwise are not popular or have low inflow of tourists.
+	\item To explore business and economic opportunities generated by the project if taken to the production level.
+\end{itemize}
+
+\subsection{Significance of the Study}
+The project proposed is significant owing to the fact that we are near the Visit Nepal Year 2020, and the proposed project will certainly be fruitful in achieving the objectives set by the Government of Nepal in the year 2020. Since the proposed idea is one of the first of its kind, it is expected that the project will reach to a significant majority of tourists that visit Nepal in 2020.
+
+\subsection{Scope and Limitations}
+In the beginning phase, the treasure hunt concept of the app will be implemented and other features are proposed to be added later gradually if possible. Such possible extensions could be addition of forex plugins, itinerary maps, guides, etc. The users will be able to collect coins from collecting the treasures, and their collection will be put in the leaderboards based on the user's local location as well as country-wise and globally. The application will also be connected to third party social networking platforms like Facebook, Twitter, etc. so that the users can share their collection and score. 
+
+The scores of the treasures will be calculated based on the factors like the difficulty to reach the destination, its novelty, potentiality to attract new tourists and other similar criteria. The users will receive more amount of score when visiting rural and novel places than visiting urban and frequently visited places.
+
+The following are the limitations of the project that are realized:
+\begin{itemize}
+ 	\item The application will be built on platforms Android as well as iOS, but not for other mobile operating systems like Blackberry and Windows.
+	\item QR code scanning will be the method of collection of treasures and no other validation architecture will be used except for the check of location when the user scans the QR.
+ \end{itemize}
+
+\break
+\section{Literature Review}
+This section consists description of the literature study performed during the development of this proposal.
+
+\break
+\section{Proposed Methodology}
+
+\break
+\section{Proposed Performance Analysis Methodology}
+
+\break
+\section{Proposed Deliverables}
+
+\break
+\section{Project Task and Time Schedule}
+
+\break
+\bibliography{references}
+\bibliographystyle{unsrt}
 
 \end{document}

@@ -42,6 +42,19 @@
 \begin{document}
 
 \pagenumbering{roman}
+
+\addcontentsline{toc}{section}{Acknowledgement}
+\large
+\begin{center}
+	\textbf{ACKNOWLEDGEMENT}
+\end{center}
+
+\normalsize
+\vspace{40px}
+\lipsum[2]
+
+\break
+
 \addcontentsline{toc}{section}{Abstract}
 \large
 \begin{center}
@@ -70,6 +83,28 @@ This report has been prepared to demonstrate the progress the team has made afte
 \setlength{\cftbeforetoctitleskip}{0pt}
 \renewcommand{\contentsname}{}
 \tableofcontents
+
+\break
+
+\large
+\addcontentsline{toc}{section}{List of Figures}
+\begin{center}
+	\textbf{LIST OF FIGURES}
+\end{center}
+\renewcommand{\listfigurename}{}
+
+\listoffigures
+
+\break
+
+\large
+\addcontentsline{toc}{section}{List of Tables}
+\begin{center}
+	\textbf{LIST OF TABLES}
+\end{center}
+\renewcommand{\listtablename}{}
+
+\listoftables
 
 \break
 
@@ -325,7 +360,7 @@ The following figure shows an instance of API request and response.
 \begin{figure}[H]
 \includegraphics[width=\linewidth, keepaspectratio]{screenshots/api.png}
 \centering
-\caption{Sequence diagram for user authentication}
+\caption{Screenshot of API request and response using Postman}
 \label{fig:auth-sequence}
 \end{figure}
 

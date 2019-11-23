@@ -15,15 +15,10 @@
 \usepackage{cite}
 \usepackage{tabularx}
 \usepackage{booktabs}
-
-
-
 \usepackage{graphicx}
 	\graphicspath{ {images/} }
-
 \usepackage{tocloft}
 \usepackage[table,xcdraw]{xcolor}
-
 \usepackage{floatrow}
 \floatsetup[table]{capposition=top}
 
@@ -37,13 +32,11 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{12pt}
 
-%\frontmatter
-
 \begin{document}
 
-\pagenumbering{roman}
 
-\addcontentsline{toc}{section}{Acknowledgement}
+
+\pagenumbering{roman}
 \large
 \begin{center}
 	\textbf{ACKNOWLEDGEMENT}
@@ -55,30 +48,35 @@
 
 \break
 
+
+
+
+
 \addcontentsline{toc}{section}{Abstract}
 \large
 \begin{center}
 	\textbf{ABSTRACT}
 \end{center}
-
 \normalsize
 As we are at the brim of the Visit Nepal year 2020, the decentralization of tourism in Nepal has become absolutely necessary. Almost ninety percent of the tourists arriving Nepal visit the most popular destinations like Kathmandu, Pokhara, Chitwan and Everest, whereas the remote places like Rara Lake and Phoksundo National Park have not seen satisfactory inflow of tourists despite them being rich in natural beauty and tourism potentiality. There are still a lot of tourist destinations in Nepal that need the attention of the tourists.
 
-Treasure Nepal is a treasure hunt application where the users travel to different places in order to collect treasures and increase their scores. The app has an integrated map that navigate the users to various tourist destinations in Nepal. The project aims to take the attention of tourists and visitors towards various tourists destinations in Nepal. The tourists need to physically reach to a place in order to collect treasures. The tourists who collect treasures at places that are remote and left behind will get higher scores than the ones who visit common popular destinations. The users can also share their scores and leaderboard status to social media. On the long run, the project sets its objective to take the tourism of Nepal to a new level.
-
-This report has been prepared to demonstrate the progress the team has made after the acceptance of project proposal. It also includes major milestones that will be met in future and estimated date for deployment.
+Treasure Nepal is a treasure hunt application available in both Android and iOS platforms, where the users travel to different places in order to collect treasures and increase their scores. The app has an integrated map that navigate the users to various tourist destinations in Nepal. The project aims to take the attention of tourists and visitors towards otherwise unnoticed tourists destinations in Nepal. The tourists need to physically reach to a place in order to collect treasures. The tourists who collect treasures at places that are remote and left behind will get higher scores than the ones who visit common popular destinations. The users can compete to get their profiles on top of leaderboard on the basis of the scores they have collected. Moreover, the scores collected by the users will provide them with exclusive offers and discounts on hotels, restaurants, travel agencies, movie tickets, and many more commercial services. On the long run, the project sets its objective to strive for the decentralization of tourists visiting Nepal.
 
 \textbf{Keywords}: Visit Nepal 2020, Treasure hunt, Tourism\\
 
 \break
+
+
+
+
+
+
 
 \large
 \addcontentsline{toc}{section}{Table of Contents}
 \begin{center}
 	\textbf{TABLE OF CONTENTS}
 \end{center}
-
-
 \normalsize
 \setlength{\cftbeforetoctitleskip}{0pt}
 \renewcommand{\contentsname}{}
@@ -86,16 +84,33 @@ This report has been prepared to demonstrate the progress the team has made afte
 
 \break
 
+
+
+
+
+
+
+
+
+
 \large
 \addcontentsline{toc}{section}{List of Figures}
 \begin{center}
 	\textbf{LIST OF FIGURES}
 \end{center}
 \renewcommand{\listfigurename}{}
-
 \listoffigures
 
 \break
+
+
+
+
+
+
+
+
+
 
 \large
 \addcontentsline{toc}{section}{List of Tables}
@@ -103,89 +118,274 @@ This report has been prepared to demonstrate the progress the team has made afte
 	\textbf{LIST OF TABLES}
 \end{center}
 \renewcommand{\listtablename}{}
-
 \listoftables
+
+\break
+
+
+
+
+
+
+
+
+
+
+
+
+\large
+\addcontentsline{toc}{section}{List of Abbreviations}
+\begin{center}
+	\textbf{LIST OF ABBREVIATIONS}
+\end{center}
 
 \break
 
 %\mainmatter
 \cfoot{\textbf{\thepage} /  \pageref{LastPage}}
-
+\normalsize
 \pagenumbering{arabic}
 \section{Introduction} 
-Treasure Nepal is a mobile application for a treasure hunt game proposed to be tailored for tourists visiting Nepal. With the view of encouraging tourists to visit remote and unexplored part of the country, the application aims to increase the traffic of tourist in such locations as well as promote their tourism. This document looks forward to providing detailed information about the project, the tasks that have been done so far, and the tasks that are remaining.
+Treasure Nepal is an Android / iOS application for a treasure hunt game targeted to internal as well as external tourists visiting several destinations within Nepal. With the view of encouraging tourists to visit remote and unexplored part of the country, the application aims to increase the traffic of tourist in such remote and unnoticed locations as well as promote their tourism. 
 
-Tourism has a great potential to contribute to the Gross Domestic Product (GDP) of Nepal, but having observations at the statistics, the ratio of contribution of tourism to GDP is not satisfactory. According to Nepal Rastra Bank, the total contribution of the foreign exchange from tourism to the total Gross Domestic Product (GDP) of Nepal was 2.2\% in the year 2017/18. \cite{tourismstats}.
+According to Nepal Rastra Bank, the total contribution of the foreign exchange from tourism to the total Gross Domestic Product (GDP) of Nepal was only 2.2\% in the year 2017/18. \cite{tourismstats}. Observing at the statistics, the ratio of contribution of tourism to GDP is not satisfactory in Nepal. Looking at the Federal Budget of Nepal of fiscal year 2019/20,  only Rs. 2.68 billion out of total Rs. 1.53 trillion budget (0.17\%) has been allocated for the development of tourism infrastructures \cite{budget}. This also shows that tourism sector is not getting quite satisfactory budget for its development. For a geographically challenged landlocked country like Nepal, tourism can in fact become one of the major backbones of economy of the nation. For developing the tourism sector in future days, collaboration from all parties -- from government to the common people --- has become absolutely necessary. 
 
-The Government of Nepal has taken efforts to celebrate the year 2020 officially as the Visit Nepal Year 2020. At the brim of year 2020, the authors have proposed to build a treasure hunt application specially tailored for the tourists to get their attention to unexplored and remote tourism destinations of Nepal. 
+The Government of Nepal has taken efforts to celebrate the year 2020 officially as the Visit Nepal Year 2020. The Government aims to bring two million tourists in Nepal during the year 2020 \cite{visitnepal}. At the brim of year 2020, tourism in Nepal is largely centralized to a few popular destinations. The places like Kathmandu, Pokhara, Chitwan, Annapurna area and Everest area are largely flocked by tourists while destinations like Rara Lake, Shey Phoksundo National Park or Khaptad National park struggle to get satisfactory inflow of traffic. This project is an endeavor taken to contribute as much as we collective can to uniformly distribute the traffic of tourists in different places, to the success of upcoming Visit Nepal 2020 project and tourism development in Nepal as a whole.
 
-There are a few applications somehow similar to the proposed application but none of them are built for tourism purposes. Rather, they are developed only for entertainment purposes. In this context, this application will distinguish itself as unique and first of the kind product in the market.
-
-Tourism in Nepal is largely centralized to a few popular destinations. The places like Kathmandu, Pokhara, Chitwan, Annapurna area and Everest area are largely flocked by tourists while destinations like Rara Lake, Shey Phoksundo National Park or Khaptad National park struggle to get satisfactory inflow of traffic.
+\subsection{Project Overview}
+Treasure Nepal is an installable mobile application available in both Android and iOS platforms. Once the user installs app and registers her account, she can view various local as well as distant treasures in a map within the application. Each of the treasures have some specified number of points associated with them. When the user decides to collect a treasure, she should physically go to the location where the treasure is installed, and then scan QR code installed at that location. Once the user scans the QR at the treasure location, those points will be awarded to the user's account. The user cannot collect the same treasure again and again. When user's point crosses a certain level, she is provided with several offers, rewards and discounts at various hospitality service providers, preferably the ones that are the nearest.
 
 \subsection{Problem Statement}
-The decentralisation of tourism has largely underestimated the potential and beauty of many travel destinations, specially in remote areas. As a result, these places have very low traffic of tourists. In addition, as majority of people in such places rely solely on tourism industry for their livelihood, this problem has pushed those communities even further down below the poverty line.
+The centralization of traffic of tourists visiting Nepal has largely underestimated the potential and beauty of many travel destinations, specially in remote areas. As a result, these places have very low traffic of tourists. In addition, as majority of people in such places rely solely on tourism industry for their livelihood, this problem has pushed those communities even further down below the poverty line. Furthermore, the tourists visiting different places in Nepal may not get sufficient information about the local attractions that are not briefed to them by their guides/agencies. An approach to reliably provide them information about the unnoticed and unvisited places in Nepal, and to encourage them going to that place has been absolutely necessary.
 
-\subsection{Project Objectives}
+\subsection{Objectives}
 The project has put forward the following objectives:
 
 \begin{itemize}
-	\item To decentralize the tourism industry and encourage uniform flow of tourists at various destinations across Nepal.
-	\item To promote and encourage the tourism in remote and novel destinations which otherwise are not popular or have low inflow of tourists.
-	\item To explore business and economic opportunities generated by the project if taken to the production level.
+	\item To provide as the deliverables an Android as well as iOS app freely to the users as a means of information about places as well as a method of entertainment.
+	\item To decentralize the tourism traffic and encourage uniform flow of tourists at various destinations across Nepal.
+	\item To promote and encourage the tourism in remote, unnoticed and novel destinations which otherwise are not popular or have low inflow of tourists.
+	\item To promote local businesses and people's life standard in remote places by encouraging the tourists to visit those places.
 \end{itemize}
 
 \subsection{Significance of the Study}
-The project is significant owing to the fact that we are near the Visit Nepal Year 2020, and it will certainly be fruitful in achieving the objectives set by the Government of Nepal in the year 2020. Since the idea behind is one of the first of its kind, it is expected that the project will reach to a significant majority of tourists that visit Nepal in 2020.
+The study of this project is significant owing to the fact that the solution to the problem we are trying to solve has rarely been ever created, and our idea is one of the first of its kind. Our approach of trying to solve the problem while providing entertainment to the users will certainly be a reason why people won't hesitate to install and use our application. Also, we are very near to the Visit Nepal Year 2020, and this study will certainly be helpful in some ways in contributing to achieving the objectives set by the Government of Nepal in the year 2020. It is expected that the project will reach to a significant majority of tourists that visit Nepal in 2020, because the inflow traffic of tourists in that year is expected to be higher than usual..
 
-\subsection{Scope and Limitations}
-In the beginning phase, the treasure hunt concept of the app will be implemented and other features are proposed to be added later gradually if possible. Such possible extensions could be addition of forex plugins, itinerary maps, guides, etc. The users will be able to collect coins from collecting the treasures, and their collection will be put in the leaderboards based on the user's local location as well as country-wise and globally. The application will have an integrated map, which enlists the tourist destinations in the locality of tourist's current location. The application will also be connected to third party social networking platforms like Facebook, Twitter, etc. so that the users can share their collection and score. 
+%\subsection{Scope and Limitations}
+%In the beginning phase, the treasure hunt concept of the app will be implemented and other features are proposed to be added later gradually if possible. Such possible extensions could be addition of forex plugins, itinerary maps, guides, etc. The users will be able to collect coins from collecting the treasures, and their collection will be put in the leaderboards based on the user's local location as well as country-wise and globally. The application will have an integrated map, which enlists the tourist destinations in the locality of tourist's current location. The application will also be connected to third party social networking platforms like Facebook, Twitter, etc. so that the users can share their collection and score. 
+%
+%The scores of the treasures will be calculated based on the factors like the difficulty to reach the destination, its novelty, potentiality to attract new tourists and other similar criteria. The users will receive more amount of score when visiting rural and novel places than visiting urban and frequently visited places.
+%
+%The following are the limitations of the project that are realized:
+%\begin{itemize}
+% 	\item The application will be built on Android and iOS platform, but not for other mobile operating systems like Blackberry and Windows.
+%	\item QR code scanning will be the method of collection of treasures and no other validation architecture will be used except for the check of location when the user scans the QR.
+% \end{itemize}
 
-The scores of the treasures will be calculated based on the factors like the difficulty to reach the destination, its novelty, potentiality to attract new tourists and other similar criteria. The users will receive more amount of score when visiting rural and novel places than visiting urban and frequently visited places.
 
-The following are the limitations of the project that are realized:
-\begin{itemize}
- 	\item The application will be built on Android and iOS platform, but not for other mobile operating systems like Blackberry and Windows.
-	\item QR code scanning will be the method of collection of treasures and no other validation architecture will be used except for the check of location when the user scans the QR.
- \end{itemize}
+
+
+
+
+
+
+
+
+
+
 
 \break
 \section{Literature Review}
-This section consists description of the literature study performed during the development of this proposal.
+This section consists description of the literature study performed during the development of this project.
 
 \subsection{Visit Nepal 2020}
-The Visit Nepal 2020 project was officially introduced by Nepal Tourism Board (NTB) in 2015. The project aims to bring two million tourists in Nepal during the year 2020 \cite{visitnepal}. The slogan of Visit Nepal 2020 has been translated to more than ten different languages. The board also is planning to train ten thousand people to provide quality service to the tourists. 
+The Visit Nepal Year (VNY) 2020 project was officially introduced by Nepal Tourism Board (NTB) in 2015 and aims to bring two million tourists in Nepal during the year 2020 \cite{visitnepal}. The year 2020 has been chosen as the national tourism year after the last similar tourism year in 2011. Its slogan -- 'Lifetime Experiences' --  has been translated to more than ten different languages. The tourism board also had developed a plan to train ten thousand people to provide quality service to the tourists. The three major commitments made by the VNY2020 for sustainability are 'Climate Change', 'Community Based Tourism' and 'Going Green' respectively \cite{vny}.
 
-\subsection{Attractions in Nepal}
-The major itineraries of the tourists visiting Nepal include mountaineering, trekking, religious pilgrimages and holiday spending. The northern part of Nepal has the mountain range with highest elevation in the world, called as the Himalayas \cite{himalayas}. These mountains serve as a destination for the tourists seeking mountaineering as welll as trekking. The famous trekking destinations in Nepal are Everest Base Camp, Annapurna Circuit and Langtang Trekking Route \cite{trekkingroutes}. Other attractions include various lakes, the famous of which are Tilicho Lake, Rara Lake, Phewa Lake and Gosaikunda.
+Community based tourism has been very popular in recent years in Nepal, especially in the Himalayan region and along the trekking routes. For instance, the numbers of registered home-stays in Nepal increased from 283 in 2017 to 324 in 2018 \cite{tourismstats}. This number was just 217 in 2015. This increasing interest in the community based tourism is in fact due to the tourist's wish to see the actual lifestyle and living standard of the people living in various communities in Nepal. These forms of tourism not only provide unforgettable experiences to the visiting tourists, but are also a means of income and living for people in such areas. This project has also taken steps to actually promote such local and community based tourism in various places in Nepal.
+
+\subsection{Tourism in Nepal}
+Tourism is one of the most important service industry contributing to the economy of Nepal. Being rich in natural, cultural and bio-diversity, Nepal comes within the short list of the budget-friendly choices of tourism destinations all around the world. As the country has finally gained stability after a decade long armed-chaos, political instability and the devastating earthquake, the number of tourists interested to visit Nepal is increasing day by day. As of 2019, the average cost per day of traveling to Nepal is only \$25, which is the reason Nepal has been seen as budget-friendly tourist destination \cite{nepaltravelcost}.
+
+The major itineraries of the tourists visiting Nepal include mountaineering, trekking, religious pilgrimages and holiday spending. The northern part of Nepal has the mountain range with highest elevation in the world, called as the Himalayas \cite{himalayas}. These mountains serve as a destination for the tourists seeking mountaineering as well as trekking. The famous trekking destinations in Nepal are Everest Base Camp, Annapurna Circuit and Langtang Trekking Route \cite{trekkingroutes}. Other attractions include various lakes, the famous of which are Tilicho Lake, Rara Lake, Phewa Lake and Gosaikunda.
 
 Nepal is also rich in biodiversity. Currently there are 12 national parks, 1 wildlife reserve, 6 conservation areas, 1 hunting reserve and 10 Ramsar sites as the protected areas of Nepal \cite{protectedareas}. Among them, Chitawan National Park is the most popular one. A lot of tourists visit these areas for the purpose of jungle safari and animal sports.
 
-Nepal is rich in cultural diversity too. A large portion of the tourist inflow in Nepal occurs for religious and pilgrimage purposes. In recent years, the various communities have incorporated home stay programmes to host tourists in their home and offer their cultural courtesy, which has sent setup good environment for the cultural tourism in Nepal. The festivals like Dashain, Lhosar, Chhath, Gai Jatra, Buddha Jayanti, etc. are some of the most popular festivals of Nepal.
+Nepal is quite rich in cultural diversity too. Some of the major ethnic groups in Nepal are Kshetri, Brahmins, Magar, Tharu, Tamang, Newar, Kami, Musalman, Yadav, Rai, Gurung, Thakuri, Limbu, etc. A large portion of the tourist inflow in Nepal, especially from south -east Asian countries like India, Bhutan, Thailand, Myanmar, etc. occurs for religious and pilgrimage purposes. In recent years, the various communities have incorporated home stay programme to host tourists in their home and offer their cultural courtesy, which has sent setup good environment for the cultural tourism in Nepal. The festivals like Dashain, Lhosar, Chhath, Gai Jatra, Buddha Jayanti, etc. are some of the most popular festivals of Nepal.
 
-\subsection{Existing Similar Appilcations}
-There are several treasure hunt applications available in the application stores developed for entertainment purposes. Some of them are GooseChase, Locandy, Huntzz, Scavify and Geocaching \cite{similarapps}. This application distinguishes itself from these applications due to its focus on the tourism industry. The available applications are developed only for entertainment purposes. Also, the users themselves have to set treasures and spots and enter them into the application to create a challenge and then challenge someone else to find and collect them. In contrast, the users of the proposed application are already provided with the treasures and they don't actively take participation in creating one.
+\subsection{Hospitality Industry in Nepal}
+Hospitality industry is a collection of service based industries that are focused on providing hospitality services to the consumers. The industries like hotels, lodges, restaurants, food and drink services, event planning services, amusements, adventures, travel and transportation services etc. all come under the common umbrella of hospitality industry. The industry of hospitality is specially important to be studied for this project, because it is those service providers that will provide offers and discounts to the tourists who use the application.
 
-\subsection{Challenges}
-One of the major challenges realized is the validation of the collection of treasures by the users. If only QR code is used for validating that a tourist has in fact reached a destination, there is a high chance that the QR codes get shared among people and people will remotely validate themselves having gone to a place and collected a treasure just by scanning the photo of the QR from a remote location. A countermeasure that can be used is to add actual location data from the user's phone's GPS sensor as an additional parameter for validation. A treasure is only considered to be collected if a user scans the QR from within a specific distance from the actual treasure location.
+The hospitality industry is largely operated by private and Non Governmental Organization (NGO) sectors in Nepal. Some of the major businesses in the field of tourism in Nepal are hotels, restaurants, lodges, travel agencies, ticket providers, tour guides, rafting agencies, mountaineering agencies, trekking agencies, recreational aviation, etc. Some statistics on number of different businesses providing hospitality services are listed in Table \ref{table:tourismindustry}.
 
-GPS spoofing is one of the major challenges for any system that has used GPS for the validation. GPS spoofing is the process of modifying a GPS receiver unit so that it broadcasts incorrect GPS signal. Some countermeasures to tackle GPS spoofing are monitoring absolute as well as relative GPS signal strength; checking time intervals and performing comparison; and performing sanity checks \cite{gpsspoofmeasures}.
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{|c|X|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{S.N.}                & \textbf{Description} & \textbf{Number}   \\ \hline
+1.  & Star Hotels     & 129                          \\ \hline
+2.  & Tourist Standard Hotels    & 1125       \\ \hline
+3.      & Total Hotels   & 1254          \\ \hline
+4. & Travel Agencies    & 3508 \\ \hline
+5. & Trekking Agencies & 2649            \\ \hline
+6.  & Rafting Agencies    & 73          \\ \hline
+7.      & Tourist Transportation Services  & 77      \\ \hline
+\end{tabularx}
+\footnotesize Source: Tourism Statistics, 2018. Ministry of Culture, Tourism and Civil Aviation. \cite{tourismstats}
+\caption{Tourism Industry Statistics in Nepal in Year 2075 BS}
+\label{table:tourismindustry}
+\end{table}
+
+%
+%\subsection{Related Laws and Legislations}
+%The Ministry of Culture, Tourism and Civil Aviation (MoCTCA) is the authoritative body of the Government of Nepal that looks upon the sector of tourism in Nepal. The ministry has a separate department named Department of Tourism for this purpose. The Government of Nepal in a joint partnership with private sectors in tourism have established Nepal Tourism Board (NTB) in 1998 by Parliament of Nepal with an act named Nepal Tourism Board Act 1997 to develop and market Nepal as a beautiful tourism destination \cite{ntbact}. At present, Nepal Tourism Board works actively in collaboration with Ministry of Culture Tourism and Civil Aviation to conduct various events and activities to promote tourism sector in Nepal.
+%
+%Table \ref{table:tourismlaws} enlists some of the major laws and regulations that are currently enforced in the tourism industry in Nepal. If this project is to be taken to production level, it should be registered to Nepal Tourism Board and the permission of MoCTCA is required to start providing services to the consumer base. As per Section 3 of Nepal Tourism Board Rules 1999, a tourism entrepreneur should pay a service fee of two percent over the total amount paid each tourist \cite{ntbrules}. In the current scope, the points collected in this application will not have direct monetary value and cannot be exchanged with cash. If the project is expanded and taken to the level where users will be able to use the points just as cash in virtual form, then a consent as well as permission from Nepal Rastra Bank is required.
+%
+%\renewcommand{\arraystretch}{1.5}
+%\begin{table}[H]
+%\begin{tabularx}{\linewidth}{|c|X|c|}
+%\hline
+%\rowcolor[HTML]{C0C0C0} 
+%\textbf{S.N.}                & \textbf{Act / Rule / Law} & \textbf{Year (AD)}   \\ \hline
+%1.  & Tourism Act     & 1978                          \\ \hline
+%2.  & Tourism Policy    & 2008       \\ \hline
+%3.      & Travel and Trekking Agency Rules  & 2005          \\ \hline
+%4. & Hotel, Lodge, Restaurant, Bar and Tourist Guide Rules    & 1981 \\ \hline
+%5. & Mountaineering Expedition Rules & 2002            \\ \hline
+%6. & Nepal Tourism Board Act & 1997 \\ \hline
+%7.      & Nepal Tourism Board Rules & 1999      \\ \hline
+%\end{tabularx}
+%\footnotesize Source: Government of Nepal : Ministry of Culture, Tourism and Civil Aviation. \cite{tourismacts}
+%\caption{Some acts and laws related to the project and tourism sector}
+%\label{table:tourismlaws}
+%\end{table}
 
 \subsection{Cross Platform App Development}
-Android and iOS are two major mobile development platforms in the market today. Any application that is developed targeting both of these platforms is known as a cross platform application. In today's market, the businesses have opted to allow all of their users use their services through all of the technological platforms available to the client. For example, the same services can be used by a web based portal, an Android mobile phone, an iPhone, iPad, or even a desktop computer software.
+Any application that is developed targeting both of these platforms is known as a cross platform application. Android and iOS are two major mobile development platforms in the market today. In today's market, the businesses have opted to allow all of their users use their services through all of the technological platforms available to the client. For example, the same services of a company can be used by a web based portal, an Android mobile phone, an iPhone, iPad, or even a desktop computer software.
 
-When cross platform applications are needed to be developed, the two most popular frameworks are Flutter and React Native. React Native is relatively older technology first released in 2013. Currently it is managed by Facebook. Flutter, a new technology, is the similar framework from Google. React Native uses JavaScript as its language while Flutter uses Dart. React Native being older has relatively wider support and user base than flutter. Flutter is rapidly increasing its user base too. The choice between one of them depends upon the programmer's preferences and choices.
+When the matter comes to cross-platform mobile application development, the most popular frameworks available today are Flutter, Ionic and React Native \cite{rnvsflutter}. The two frameworks are compared in Table \ref{table:rnvsflutter}. React Native is relatively older technology first released in 2013 and currently managed by Facebook Inc. Flutter, a new technology, is the similar framework from Google. React Native uses JavaScript as its language while Flutter uses Dart. So, to use Flutter, one has to learn Dart first, which itself is not a primary language many developers learn in early stages of their programming career. React Native being older has relatively wider support and user base than flutter. Flutter is rapidly increasing its user base too. The choice between one of them depends upon the programmer's preferences and choices. We opted to use React Native in stead of Flutter in this project because of the team member's pre-familiarity with Javascript language and better community support. 
+
+
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{|c|c|X|X|X|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{S.N.}                & \textbf{Category} & \textbf{React Native} & \textbf{Ionic} & \textbf{Fluttter}   \\ \hline
+1. & Developed By    & Facebook and Community  & Drifty Co. & Google and Community     \\ \hline
+2. & Released   & 2013 (Open Sourced in 2015)  & 2013 & 2017     \\ \hline
+3. & Language    & JavaScript  & HTML, CSS, JavaScript & Dart     \\ \hline
+4. & Community Support  & Old and Strong  & Old and Strong & Relatively new     \\ \hline
+5. & Used By   & Facebook, Instagram, Tesla, Uber, Walmart, Airbnb  & Marketwatch, NHS, SWorkit, Untapped & Alibaba, Google Ads, Tencent     \\ \hline
+\end{tabularx}
+\footnotesize Source: CodeBurst.io \cite{rnvsflutter}
+\caption{Comparison between React Native, Ionic and Flutter}
+\label{table:rnvsflutter}
+\end{table}
+
+
+\subsection{Client Server Architecture}
+Client-Server architecture is a model of computing where the services and resources to be provided are managed by a computer called a server and the provided services are utilized and used in the computer called a client, as shown in Figure \ref{fig:clientserver}. The clients use the services hosted by the server with the use of a network or internet connection. There are several noticeable advantages of using a client server architecture in stead of a single tier architecture. The most important of them is the separation of workloads between the two computers. The maintenance also becomes easy as all the services and resources are hosted by a single computer. The separation of the client and server enables the developers to employ security strategies in both client and server layer and thus makes it more secure. Data and resource sharing is also improved by the use of a central server where all the clients can have access to.
+
+In our project, the server tier is the API server that will handle all the data requests received from mobile device and the client will the application running in Android phone or iPhone.
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{client-server.png}
+	\centering
+	\caption{Client Server Architecture}
+	\label{fig:clientsever}
+\end{figure}
+
 
 \subsection{REST API}
-REST stands for Representational State Transfer. It is a software architecture that defines a set of constraints for creation of web services and APIs. The web services that abide by these constraints are called RESTful. The web services are the programs that are run in the server that respond to various HTTP requests like GET, PUT, POST, DELETE, etc. and send response to the client of those services.
+API stands for Application Programming Interface. It is a set of of functions, procedures and protocols between a client and a server so that the client can use the application and services of a server. An API can be Web Service based, Operating System based or Database Management System (DBMS) based. Web based APIs are those which provide the interface between the client (Presentation logic) and the database (data and business logic). A client can initiate either a read or a write operation request the API server on some data. Each time a client sends a request to the API server, it breaks it down to different database operations and then read/write data to the database. The API server also sends back the data it receives from the database in formats like XML(Extensive Markup Language) or JSON(JavaScript Object Notation).
 
-API stands for Application Programming Interface. It is a kind of abstract interface or a communication protocol between a client and a server to ease client-server communication. An API can be Web based, OS based, or for a database management system. Web based APIs are those which provide the interface between the client and the database. Each time a client sends a request to the API server, it breaks it down to different database operations and then read/write data to the database. The API server also sends back the data it receives from the database in formats like XML(Extensive Markup Language) or JSON(JavaScript Object Notation).
+REST stands for Representational State Transfer. It is a software architecture that defines a set of constraints for creation of web services and APIs. The web services that abide by these constraints are commonly called RESTful. The web services are the programs that are run in the server that respond to various HTTP requests like GET, PUT, POST, DELETE, etc. and send response to the client of those services.
+
+Hence, a RESTful API is defined as a software architecture where an API server provides its clients with various endpoints through which the client can read and write data from/to the database. The API server is programmed in such a way that it returns a specific set of dynamic data when one of it's endpoint is hit with correct method, authentication header, body and parameters. Table \ref{table:apiconventions} shows commonly used convention in request-response model of a RESTful API.
+
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{|c|c|c|c|X|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+URL              & Method & Parameters &  Body & Commonly Used For                                                                              \\ \hline
+/endpoint/       & GET    &                                   &                             & Get all entries from the database                                                              \\ \hline
+/endpoint/\{id\} & GET    &                                   &                             & Get the entry corresponding to the provided id                                                 \\ \hline
+/endpoint/       & GET    & params                            &                             & Get a list of entries that are filtered by provided parameters                                 \\ \hline
+/endpoint/       & POST   &                                   & entry                       & Add the new entry into the database                                                            \\ \hline
+/endpoint/\{id\} & DELETE &                                   &                             & Delete the entry corresponding to the provided id                                              \\ \hline
+/endpoint/\{id\} & PUT    &                                   & new\_entry                  & Update the entry corresponding to the given id with new entry                                  \\ \hline
+/endpoint/\{id\} & PATCH  &                                   & \{attr: value\}             & Update only the specified attributes of the entry corresponding to provided id with new values \\ \hline
+\end{tabularx}
+\caption{Commonly used convention in API Programming}
+\label{table:apiconvention}
+\end{table}
+
+\subsection{JavaScript Object Notation}
+JavaScript Object Notation (JSON) is an open-standard lightweight method of data interchange. It is one of the widely used method of exchange of data between client and server in RESTful API architecture. JSON makes use of key-value pairs of strings to represent data. The collection of unique keys and corresponding values is known as JSON object. A collection of JSON objects is known as a JSON array. A JSON object is enclosed in curly braces '\{ \}' whereas the JSON array is enclosed inside square brackets '[ ]'. In Figure \ref{fig:json}, an example of JSON array consisting of two JSON objects is shown.
+
+
+\begin{figure}[H]
+	\includegraphics[width=0.3\linewidth]{json.png}
+	\centering
+	\caption{The format of JSON object and array}
+	\label{fig:json}
+\end{figure}
+
+It is quite important to note the difference between an actual JavaScript Object and a JSON formatted object. The first and foremost difference is that JSON is just a format of transferring text, that just happens to be formatted in a way JavaScript objects are written. The JSON object doesn't directly correspond to a JavaScript object. In fact, JSON only supports strings as its key and value, whereas the values in JavaScript object can be any data type. A parser is needed to first convert a JSON string to actual JavaScript object if it is to be used inside JavaScript code.
+
+\subsection{Global Positioning System}
+Global Positioning System, also abbreviated as GPS is a global system of satellite based navigation where about a total of 33 satellites orbit the earth to provide geolocation and time information to the receiver anywhere in the earth. As of 2019, the GPS is owned by the United States Government and operated by United States Air Force \cite{gps}. It is freely available for use to everyone with the use of a GPS receiver. Today, almost all of the smartphones have a built-in GPS sensor which they use as the method of navigation.
+
+The GPS satellites any particular time, a GPS receiver is directly in line-of-sight with at least four satellites. All of the 33 GPS satellites regularly emit radio waves carrying information about their current position and time. When a GPS receiver receives those radio waves, it can figure out how far away from those satellites it currently is. Based on the distance of the GPS receiver from at least three satellites in its line of sight, the receiver can deduce its location by the method called as trilateration \cite{gps}.
+
+Let us consider a GPS receiver that is in line of sight to three GPS satellites at some place in the world. When the receiver figures out its distance from one of the satellites, its actual position is somewhere in the surface of the sphere centered at the position of satellite, with radius equal to the distance from the satellite. If the receiver knows its distance from all of three satellites, its position is exactly at the intersection of three spheres centered at each of the satellites with radius equal to the distance between them and the receiver, as shown in Figure \ref{fig:trilateration}. In this way, the accuracy of the position of receiver can be pin-pointed to the accuracy of about 30 centimeters \cite{gps}.
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\linewidth]{trilateration.png}
+	\centering
+	\caption{Identification of geolocation by trilateration}
+	\label{fig:trilateration}
+\end{figure}
+
+\subsection{Longitude and Latitude} \label{latlng}
+The position of any point in the world can be precisely described by two real numbers called longitude and latitude. To make this possible, 180 equidistant and parallel horizontal imaginary lines are drawn over the surface of the earth, which are called latitudes. The longitudes, also called as meridians are the 360 vertical lines that have their ends at the two poles of the earth and span through the surface of the earth. As a reference, the longitude that passes through the center of the earth , also called the equator, is considered as 0 degrees latitude. In the similar way, the longitude line that passes through the British Royal Observatory in Greenwich England is considered as 0 degrees longitude. The distance between two consecutive latitude or longitude is considered as one degree. As a convention, the northern hemisphere is counted as positive latitude and the southern hemisphere as negative latitude. Similarly, the the hemisphere to the east of 0 degree is considered positive and the western hemisphere is considered to have negative longitude. To precisely locate a point in the earth, we provide a coordinates of two real numbers, which describe the distance of the point in degrees from the 0 degree latitude and 0 degree longitude lines respectively.
+
+Given the coordinates of two points, we need to find the distance between those two points on the surface of the earth when we have to verify whether the tourist collected the treasure from within a permitted area around the actual treasure location or not. This distance between the two points on the surface of earth, also called as the great-circle distance can be calculated by using Haversine Formula \cite{haversine}.
+
+Let us consider two points $A$ and $B$ on the surface of the earth with co-ordinates $(\psi_1, \phi_1)$ and $(\psi_2, \phi_2)$. Let $R$ be the radius of the earth. Then according to the Haversine Formula, the great-circle distance $d$ between the points $A$ and $B$ can be calculated as:
+\begin{equation}
+ d = 2R \sin^{-1} \left( \sqrt { \sin^2 \left( \frac{\phi_2 - \phi_1}{2} \right) + \cos{\phi_1} \cos{\phi_2} \sin^2 \left( \frac{\psi_2 - \psi_1}{2} \right) } \right) 
+\end{equation}
+% + \cos{\phi_1} \cos{\phi_2} \sin^2 \left( \frac{\psi_2 - \psi_1}{2} \right) 
+
+\subsection{Similar Applications}
+There are several treasure hunt applications available in the application stores developed for entertainment purposes. Some of them are GooseChase, Locandy, Huntzz, Scavify and Geocaching \cite{similarapps}. This application distinguishes itself from these applications due to its focus on the tourism industry. The available applications are developed only for entertainment purposes. The existing applications are actually used for challenging friend / family to solve some puzzle and collect treasures within a small amount of area. In contrast, our application covers the whole country. Also, the users themselves have to set treasures and spots and enter them into the application to create a challenge and then challenge someone else to find and collect them. In contrast, the users of the proposed application are already provided with the treasures and they don't actively take participation in creating one.
+
+\subsection{Challenges}
+One of the major challenges realized is the validation of the collection of treasures by the users. If only QR code is used for validating that a tourist has in fact reached a destination, there is a high chance that the QR codes get shared among people and people will remotely validate themselves having gone to a place and collected a treasure just by scanning the photo of the QR from a remote location. A countermeasure that can be used is to add actual location data from the user's phone's GPS sensor as an additional parameter for validation. A treasure is only considered to be collected if a user scans the QR from within a specific distance from the actual treasure location. That distance can be calculated using the Haversine formula discussed in section \ref{latlng}.
+
+GPS spoofing is one of the major challenges for any system that has used GPS for the validation. GPS spoofing is the process of modifying a GPS receiver unit so that it broadcasts incorrect GPS signal. The solution to GPS spoofing problem is quite complex and out of scope right now. However, some countermeasures to tackle GPS spoofing are monitoring absolute as well as relative GPS signal strength; checking time intervals and performing comparison; and performing sanity checks \cite{gpsspoofmeasures}.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \break
 \section{Methodology}
 This section describes the methodology that have been followed during the development of the project.
 
-\subsection{Proposed Software Development Life Cycle}
+\subsection{Software Development Life Cycle}
 The project has been developed as per the waterfall model of software development life cycle as depicted in Figure \ref{fig:sdlc}. The reason for choosing this model is the lack of sufficient time duration for agile and iterative methods, as well as very low chances of the changes of requirements in the process of development. 
 
 \begin{figure}[h]
@@ -195,12 +395,14 @@ The project has been developed as per the waterfall model of software developmen
 	\label{fig:sdlc}
 \end{figure}
 
-The life cycle begins when the team collects and evaluates the requirements that will be expected from the application. The design and implementation phase will be to design and build both API services and client applications. By the end of this phase, a minimal viable product (MVP) will already have been constructed. In the testing and debugging phases, the quality control methods will be applied to both API and application. Finally, the application will be deployed to the Amazon Web Services at the end of the deployment phase. However, there might be slight modifications in the original waterfall model where the design and implementation may be changed slightly after the testing phase if seen reasonable.
+The life cycle began when the team collected and evaluated the requirements expected from the application. The design and implementation phase was to design and build both API services and client applications. By the end of this phase, a minimal viable product (MVP) was already constructed. In the testing and debugging phases, the quality control methods were be applied to both API and application. Finally, the application was deployed to the local server at the end of the deployment phase. 
+%However, there might be slight modifications in the original waterfall model where the design and implementation may be changed slightly after the testing phase if seen reasonable.
+
 
 \subsection{Technical Architecture}
 The application has been built upon the client-server web architecture, as illustrated in Figure \ref{fig:arch}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=\linewidth]{architecture}
 \centering
 \caption{Technical architecture of the application}
@@ -213,15 +415,17 @@ At the heart of the architecture lies the RESTful web service which communicates
 Table \ref{table:tech} consists of the major technologies that are proposed to be used during development and deployment of the application. They are briefly described in the subsections that follow.
 
 \renewcommand{\arraystretch}{1.5}
-\begin{table}[]
+\begin{table}[H]
 \begin{tabular}{|l|l|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\textbf{Subject}    & \textbf{Proposed Technology} \\ \hline
+\textbf{Subject}    & \textbf{Tools and Technologies Used} \\ \hline
 Backend Database            & MySQL                        \\ \hline
-REST API Service    & Django REST Framework        \\ \hline
-Android Client  & React Native                 \\ \hline
-Deployment Platform & Amazon Web Services (AWS)    \\ \hline
+REST API Service    & Django REST Framework; Postman        \\ \hline
+Android Application  & React Native; Android SDK                 \\ \hline
+Android / iOS application  & React Native; iOS SDK; XCode              \\ \hline
+IDE / Code Editor& Sublime Text; JetBrains WebStorm  \\ \hline
+Version Control System& GitHub  \\ \hline
 Documentation & LaTeX \\ \hline
 \end{tabular}
 \caption{Technologies proposed to be used}
@@ -229,28 +433,148 @@ Documentation & LaTeX \\ \hline
 \end{table}
 
 \subsubsection{MySQL}
-MySQL is one of the most widely used relational database management system (RDBMS). The major reason for us to choose this database is that it is completely open source. Some of the established tech corporates like Facebook, Twitter, Youtube etc. use MySQL. It also has very good user base and the usage is easier thanks to comprehensive documentation and support.
+MySQL is one of the most widely used relational database management system (RDBMS). The major reason for us to choose this database is our previous familiarity with the database and it being completely open source. Some of the established tech corporates like Facebook, Twitter, Youtube etc. use MySQL. It also has very good user base and the usage is easier thanks to comprehensive documentation and support.
 
 \subsubsection{Django REST Framework}
-Django REST framework is an open source framework for building Web APIs. The framework provides features like authentication, tokenization, session handling, serialization, etc. for users to build API in short amount of time. The language used is Python.
+Django REST framework is an open source framework for building Web APIs. The framework provides features like authentication, tokenization, session handling, serialization, etc. for users to build API in short amount of time. The programming language used is Python. The reason for choosing this framework is the team members previous familiarity and experience in working with Python programming language.
+
+\subsubsection{Postman}
+Postman is an application software that is used for testing API web services. It lets users provide URL, parameters, body and headers to send the request and also shows the response in raw as well as pretty form.
 
 \subsubsection{React Native}
-React Native is an open source framework for building mobile applications using Javascript language. In addition to the usage of widely used language like Javascript, it also has cross platform support so that both Android and iOS applications can be built using same code base.
+React Native is an open source framework for building mobile applications using Javascript language. In addition to the usage of widely used language like Javascript, it also has cross platform support so that both Android and iOS applications can be built using same code base. Compared to its immediate rival -- Flutter -- it uses relatively easy and familiar language as compared to Dart used by Flutter. We chose this framework due to lack of time to learn Dart language and our familiarity with JavaScript language.
 
-\subsubsection{Amazon Web Services (AWS)}
-Amazon Web Services (AWS) is a common cloud platform that provides cloud based services to individuals, governments and corporates on the pay-as-you basis. It is a subsidiary of Amazon Inc.
+\subsubsection{Android SDK}
+Android Software Development Kit is a set of build tools and libraries developed by Google Inc. to let developers develop applications in the Android platform. React Native also uses the Android build tools to eventually compile the application code and install it on the android device.
+
+\subsubsection{iOS SDK}
+iOS Software development Kit is a set of libraries and build and debugging tools developed by Apple Inc. to allow developers to develop applications and software in the iOS platform. React Native requires iOS SDK in order to build the compiled iOS application that could run on an iOS device.
+
+\subsubsection{XCode}
+XCode is a proprietary Integrated Development Environment (IDE) for macOS, primarily used for developing applications for the iOS and Mac platforms. XCode is frequently required to change native code for asking permissions, interacting with device sensors, installing third party APIs with keys, etc.
+
+\subsubsection{Sublime Text}
+Sublime Text is a light-weight cross-platform code editor written in C++ and Python. It is very popular among the developers due to ability of customization and plugins. This editor was chosen for development of backend due to our early experience working on it.
+
+\subsubsection{JetBrains WebStorm}
+JetBrains WebStorm is a commercial and proprietary IDE developed by JetBrains for JavaScript development. This IDE was chosen because of it's amazing code completion feature and easier debugging.
+
+\subsubsection{GitHub}
+GitHub is a platform for hosting and sharing software development version control by using Git. Github was acquired by American company Microsoft Corporation in 2018. The reason for using this platform was our early experience with it. 
 
 \subsubsection{LaTeX}
-LaTeX is widely used documentation preparation system for preparation of scientific documents, books and technical papers. It uses plain text for formatting unlike other document creation systems. The source code is compiled by a compeller to generate the printable/viewable document.
+LaTeX is widely used documentation preparation system for preparation of scientific documents, books and technical papers. It uses plain text for formatting unlike other document creation systems. The source code is compiled by a compeller to generate the printable/viewable document. The reason for using LaTeX for documentation was to learn this new form of documentation.
+
+
+\subsection{APIs and Libraries Used}
+In course of developing this project, we have integrated several open source as well as proprietary APIs and libraries into our application. Some of the major APIs and libraries used in this project are listed in Table \ref{table:apiandlibrary}.
+
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{|c|X|X|X|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+{\color[HTML]{000000} S.N.} & {\color[HTML]{000000} Name}                                               & {\color[HTML]{000000} Author / Developer} & {\color[HTML]{000000} Used For}                                         \\ \hline
+1.                          & \begin{tabular}[c]{@{}l@{}}Google Maps SDK\\ (Android / iOS)\end{tabular} & Google Inc.                                            & Showing Google maps inside our application for users to view treasures. \\ \hline
+2.                          & React Native Paper                                                        & Callstack                                              & Material Design UI library for developing Android and iOS application   \\ \hline
+3.                          & react-native-maps                                                         & React Native Community                                 & Integration of Google Maps / Apple maps inside of mobile application    \\ \hline
+4.                          & react-navigation                                                          & React Navigation                                       & Navigating users from one screen to another inside mobile application   \\ \hline
+5.                          & redux                                                                     & Dan Abramov and Andrew Clark                           & State management in mobile application                                  \\ \hline
+6.                          & react-native-camera                                                       & React Native Community                                 & Access mobile device's camera and scan QR codes                         \\ \hline
+7.                          & react-native-vector-icons                                                 & Joel Arvidsson                                         & Showing vector icons at various places in mobile application            \\ \hline
+8.                          & react-redux                                                               & Redux                                                  & Using redux library inside of a React Native application                \\ \hline
+\end{tabularx}
+\caption{List of APIs and libraries used in the project}
+\label{table:apiandlibrary}
+\end{table}
+
+
+\subsection{Method of Data Collection}
+Our team has collected data about the various tourist destinations and places (the data include the location, the photos, latitude, longitude, how to get to that place, entry fee, etc.) so that we can add treasures to those places and add them to our database.
+
+In this project, we have used secondary source of data collection. We did not go to those tourist attractions by ourselves but collected the information about them through the use of Internet. The latitude and longitude information were collected by the help of Google Maps, while the address, description, etc were collected from various tourist blogs and websites. As a result, the collected data are not quite reliable and are used only for demo purpose. For more reliability, we can use primary source of information by directly going to thos places and collecting data.
+
+Figure \ref{fig:data-model} shows a sample of data collected by our team.
+
+\begin{figure}[H]
+\includegraphics[width=\linewidth, keepaspectratio]{screenshots/data-collection.png}
+\centering
+\caption{Model of data collection}
+\label{fig:data-model}
+\end{figure}
+
+
+\subsection{Team Members and Role Division}
+TODO: EDIT THIS
+%The working time period for the project was about three months. There were two members in the project team. The major tasks and role division among the team members is mentioned in Table \ref{table:taskdiv}.
+%
+%\begin{table}[h!]
+%\begin{tabular}{|l|l|}
+%\hline
+%\rowcolor[HTML]{C0C0C0} 
+%\textbf{Team Member} & \textbf{Assigned Tasks}                                                                                                                     \\ \hline
+%Bikalpa Dhakal       & \begin{tabular}[c]{@{}l@{}} Project Management\\Android Application Development\\ Deployment \end{tabular} \\ \hline
+%Avinash Shreshtha   & \begin{tabular}[c]{@{}l@{}}API Development\\ Data Management\\ Project Documentation\end{tabular}                                           \\ \hline
+%\end{tabular}
+%\caption{Division of tasks among project team members}
+%\label{table:taskdiv}
+%\end{table}
+
+
 
 \pagebreak
-\section{Tasks Done so Far}
-This section enlists the major breakthroughs achieved during the project. Among the total works proposed in the proposal, about two thirds of the progress have already been achieved and the foundation for the next one third have also been laid out.
+\section{Requirement Analysis}
+The requirement analysis of the product to be developed was done before everything else during the project. During this phase, our team worked together to find out what features were expected of the product to be developed. It was also helpful to filter what is important and what is not important features to be added in the application. The requirements were widely categorized into functional and non functional requirements. The process we used during this phase are described in the sections that follow.
 
-\subsection{Requirement Analysis}
-The requirement analysis of the product to be developed was done before everything else during the project. During this phase, our team worked together to find out what features were expected of the product to be developed. It was also helpful to filter what is important and what is not important features to be added in the application. The requirements were widely classified into two categories: functional and non functional requirements. Functional requirements are those requirements which define a system or a component by the functions it should perform. Non functional requirements are those which describe quality attributes in a system.
+% 
 
-The most widely used tool during the requirement analysis phase in our project was the use case descriptions and diagrams. The project team members first described the actions a user would perform on the system during a particular scenario, and then it was converted to diagrammatic form. 
+%\subsection{Feasibility Study}
+%Feasibility study is the assessment of how practicable a proposed project is. For a project to be feasible, it should both be technically as well as economically feasible. For technical feasibility, we studied about to what extent can we use an end user's mobile device to collect data and information needed for the implementation of the project. We found that major sensitive data we receive from the user is the user's location. But looking at every mobile applications that use location services, the use of user's location in our application is not quite infeasible.
+
+\subsection{Requirements Elicitation}
+Requirement elicitation is the process of collecting and noting down several types of requirements that are expected of the product from various sources like development team, the consumer, users, experts, etc. Prioritizing the collected requirements is also an important task done in this phase. Elicitation is the first step in developing the requirements documentation in any software project. In this project, the major sources for eliciting the requirements where the team members and the supervisor assigned to the project team.
+
+During requirement elicitation, the team members conducted elicitation meetings with the supervisor to find out and note out requirements from 'absolutely necessary' to 'desirable'. During the process, each of us acted as an end user and described what an end user would expect the product to do. We would then discuss about whether the requirement is necessary or not, whether it is feasible to implement in our project and then note them in neat and tidy way. The team members then categorized the requirement into several categories that are described in the subsections that follow.
+
+\subsubsection{Functional Requirements}
+Functional requirements are those requirements which define a system or a component by the functions it should perform. These are the requirements that are absolutely necessary to be in the product. The functional requirements of our project are listed in Table \ref{table:functionalreq}.
+
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{|c|X|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+{\color[HTML]{000000} S.N.} & {\color[HTML]{000000} Functional Requirements}                                                                             & {\color[HTML]{000000} Priority} \\ \hline
+1.                          & The user should be able to download and install the application in a Android Phone or iPhone                               & Very High                       \\ \hline
+2.                          & The user should be able to register his/her account in the application and login at any time with valid credentials        & Very High                       \\ \hline
+3.                          & The user should be able to view treasures in a map and get information about the treasures.                                & High                            \\ \hline
+4.                          & The user should be able to view rewards that he/she is eligible to collect and read their details.                         & High                            \\ \hline
+5.                          & The user should be able to scan a treasure and have the points collected in his/her account.                               & High                            \\ \hline
+6.                          & It will be possible to scan a treasure once and only once and only when the user is in vicinity of the treasure's location & Very High                       \\ \hline
+7.                          & The points provided to a particular treasure should be practical and dependent on factors like reachability, cost, etc.    & High                            \\ \hline
+\end{tabularx}
+\caption{List of functional requirements of the project}
+\label{table:functionalreq}
+\end{table}
+
+\subsubsection{Non-Functional Requirements}
+Non functional requirements are those which describe quality attributes in a system. These are the requirements that are not absolutely necessary, but are desirable for good quality of the proposed product. The non-functional requirements of our project are listed in Table \ref{table:nonfuncreq}.
+
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{|c|X|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+{\color[HTML]{000000} S.N.} & {\color[HTML]{000000} Non Functional Requirements}                                                                                                      & {\color[HTML]{000000} Desirability} \\ \hline
+1.                          & The permitted distance from the location of the treasure up-to which the collection of treasure is allowed could be specified and entered into database & High                                \\ \hline
+2.                          & The users should be able to login via email as well as Google and Facebook                                                                              & Medium                              \\ \hline
+3.                          & The user will be able to share the application via email or social media to invite other people to play                                                 & High                                \\ \hline
+4.                          & The rewards offered to the users could be provided on the basis of user's personal preference.                                                          & Medium                              \\ \hline
+\end{tabularx}
+\caption{List of non functional requirements of the project}
+\label{table:nonfuncreq}
+\end{table}
+
+
+\subsection{Requirements Specification}
+A Software Requirement Specification (SRS) is a detailed description of both functional and and non functional requirements of a software project that are formatted and documented for later reference. The most widely used tools for requirement specification are the use case stories, UML use case diagrams, use case descriptions and UML activity diagrams. during the requirement analysis phase in our project was the use case descriptions and diagrams. The project team members first described the actions a user would perform on the system during a particular scenario, and then it was converted to diagrammatic form. 
 
 
 \begin{table}[h!]
@@ -312,7 +636,13 @@ The application will have a number of rewards and offers from different business
 \label{fig:use-case-reward}
 \end{figure}
 
+\subsection{Requirement Validation}
+
+\pagebreak
+\section{Design}
 \subsection{Database Design}
+The database used for the API backend in the project is MySQL. Since the mobile applications do not access the data directly from the database, the API server is responsible for fetching the data in accordance to the API query and send it to the mobile device. 
+
 The following class diagram illustrates the database schema used for the application. 
 
 \begin{figure}[H]
@@ -322,21 +652,9 @@ The following class diagram illustrates the database schema used for the applica
 \label{fig:db-schema}
 \end{figure}
 
-The database used for the API backend in the project is MySQL. Since the mobile applications do not access the data directly from the database, the API server is responsible for fetching the data in accordance to the API query and send it to the mobile device. 
 
-\subsection{Data Collection}
-Our team has collected data about the various tourist destinations and places (the data include the location, the photos, latitude, longitude, how to get to that place, entry fee, etc.) so that we can add treasures to those places and add them to our database.
-
-The following figure shows a sample of data collected by our team.
-
-
-\begin{figure}[H]
-\includegraphics[width=\linewidth, keepaspectratio]{screenshots/data-collection.png}
-\centering
-\caption{Model of data collection}
-\label{fig:data-model}
-\end{figure}
-
+\pagebreak
+\section{Coding and Implementation}
 
 \subsection{Backend API}
 The API endpoints for creating, updating, reading and deleting the data from all of the tables shown in Figure \ref{fig:db-schema} have already been created. The following table shows the syntax of different endpoints of the API.
@@ -398,51 +716,15 @@ The following figures show some screenshots of the application developed so far.
 \end{figure}
 
 
+\pagebreak
+\section{Testing and Debugging}
+
 
 \pagebreak
-\section{Results and Discussion}
-At the point of submission of this document, the project is almost 65\% complete. The backend part is almost complete while some amount of task is remaining in application development part. After analysing the project schedule submitted earlier during proposal defense, our project is right on its proposed time schedule.
-
-At this point in time, the project team has learnt a lot about the cross platform development and the basics of RESTful services as compared to when the project was just started. At first, the project team had used SQLite as the database due to its small size and easier integration and we later switched to the MySQL database. We had initially used SQLite only for test purpose. However during the migration of database we had to tackle a lot of portability issues and also required to re-enter the data to the database. We also had encountered problems while integrating third party authentication service (like Facebook and Google) to our project, partly because we were configuring our project to run both on Android and iOS devices simultaneously. However we were able to solve to the problem with team work and mutual discussion.
+\section{Deployment}
 
 \pagebreak
-\section{Tasks Remaining}
-This section enlists the taks that are yet to be done before the final defense of the project.
-
-\subsection{API Completion}
-Although the authentication module is already working fine, we need to incorporate JWT (Java Web Token) model to authenticate every request to the backend API. Since we have already written logic for the generation of the key, the only thing remaining is to add a parameter called 'key' to every request, and then validate that key by API server before sending response to a client.
-
-Similarly, the end points for the search queries have not yet been written. The API should be updated with provision of search queries for treasures as well as rewards. After completion of these two features, the backend API part of our project will be complete. On overall, about 80\% of work has been completed in the backend portion.
-
-\subsection{Mobile Application Completion}
-The mobile application part of the project has been completed to about 50\% of the total work required. Right now, the authentication module is working fine, which needs slight modifications for incorporating the JWT tokens mentioned earlier. The major work remaining in the application portion is to show treasure locations in the map and then write logic to collect those treasures when the user checks in using their app at that location.
-
-\pagebreak
-\section{ Deliverables}
-The following will be the major deliverables that will be produced at the end of this project.
-
-\subsection{RESTful API service}
-There will be a running instance of RESTful API service developed and deployed at the end of the project. This API will be responsible for communicating between the client applications and the central database server.
-
-\subsection{Android client application}
-The application will be developed integrating all the features proposed earlier. The users will be able to use the application to scan QR codes at different travel destinations which will reward them with scores in their accounts. An interactive map will be integrated with the application that shows the treasures installed at various tourist destinations near to the tourist's current location. The application will also be integrated with social networking platforms like Facebook, Twitter, Instagram etc. so the tourists can share their scores publicly to their friends and acquaintances. 
-
-\break
 \section{Project Task and Time Schedule}
-The working time period for the project is three months. The project will be completed by the end of the spring semester as per the requirements of the university. The major task division among the team members is mentioned in Table \ref{table:taskdiv}.
-
-\begin{table}[h!]
-\begin{tabular}{|l|l|}
-\hline
-\rowcolor[HTML]{C0C0C0} 
-\textbf{Team Member} & \textbf{Assigned Tasks}                                                                                                                     \\ \hline
-Bikalpa Dhakal       & \begin{tabular}[c]{@{}l@{}} Project Management\\Android Application Development\\ Deployment \end{tabular} \\ \hline
-Avinash Shreshtha   & \begin{tabular}[c]{@{}l@{}}API Development\\ Data Management\\ Project Documentation\end{tabular}                                           \\ \hline
-\end{tabular}
-\caption{Division of tasks among project team members}
-\label{table:taskdiv}
-\end{table}
-
 The time schedule of the project is illustrated in Figure \ref{fig:schedule}.
 
 \begin{figure}[h!]
@@ -453,11 +735,27 @@ The time schedule of the project is illustrated in Figure \ref{fig:schedule}.
 \end{figure}
 
 
+\pagebreak
+\section{Conclusion}
+At the point of submission of this document, the project is almost 65\% complete. The backend part is almost complete while some amount of task is remaining in application development part. After analyzing the project schedule submitted earlier during proposal defense, our project is right on its proposed time schedule.
+
+At this point in time, the project team has learnt a lot about the cross platform development and the basics of RESTful services as compared to when the project was just started. At first, the project team had used SQLite as the database due to its small size and easier integration and we later switched to the MySQL database. We had initially used SQLite only for test purpose. However during the migration of database we had to tackle a lot of portability issues and also required to re-enter the data to the database. We also had encountered problems while integrating third party authentication service (like Facebook and Google) to our project, partly because we were configuring our project to run both on Android and iOS devices simultaneously. However we were able to solve to the problem with team work and mutual discussion.
+
+\pagebreak
+\section{Further works and Recommendations}
+At the point of submission of this document, the project is almost 65\% complete. The backend part is almost complete while some amount of task is remaining in application development part. After analyzing the project schedule submitted earlier during proposal defense, our project is right on its proposed time schedule.
+
+At this point in time, the project team has learnt a lot about the cross platform development and the basics of RESTful services as compared to when the project was just started. At first, the project team had used SQLite as the database due to its small size and easier integration and we later switched to the MySQL database. We had initially used SQLite only for test purpose. However during the migration of database we had to tackle a lot of portability issues and also required to re-enter the data to the database. We also had encountered problems while integrating third party authentication service (like Facebook and Google) to our project, partly because we were configuring our project to run both on Android and iOS devices simultaneously. However we were able to solve to the problem with team work and mutual discussion.
+
 
 \break
 \addcontentsline{toc}{section}{References}
 \bibliography{references}
 \bibliographystyle{ieeetran}
+
+\break
+\addcontentsline{toc}{section}{Appendices}
+
 
 \end{document}
 

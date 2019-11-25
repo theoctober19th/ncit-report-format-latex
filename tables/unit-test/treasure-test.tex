@@ -1,0 +1,19 @@
+\begin{longtable}{|c|X|X|X|X|X|}
+\caption{Unit test cases for treasure collection unit.} \label{table:treasure-test} \\
+\hline
+\multicolumn{6}{|c|}{\textbf{Unit : Treasure Collection}}                                                                                                  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{ID} & \textbf{Test Case Description} & \textbf{Test Case Data} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Status} \\ \hline
+\endfirsthead
+\rowcolor[HTML]{C0C0C0} 
+\textbf{ID} & \textbf{Test Case Description} & \textbf{Test Case Data} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Status} \\ \hline
+\endhead
+     TT01       &  Enter a search query in the search bar and tap search icon                   &   query: some valid string                      &    The treasures matching the typed query are displayed on map                      &      The treasures matching the typed query are displayed on map                   &     Success            \\ \hline
+     TT02 & Enter nothing (blank) in search query and hit search bar  & query: blank.  & Nothing happens.  & App Crashes. & Failure (Debug DT01 and repeat again) \\ \hline
+     TT02 & Enter nothing (blank) in search query and hit search bar  & query: blank.  & Nothing happens.  & Nothing happens & Success \\ \hline
+     TT03 & Scan a QR code corresponding to a treasure & qr: a valid treasure & The treasure corresponding to QR is collected to user's account & The treasure corresponding to QR is collected to user's account. & Success \\ \hline
+     TT04 & Scan the same QR again & qr: the QR that was already scanned & Nothing happens & Nothing happens & Success \\ \hline
+     TT05 & Scan an invalid (a random string QR) & qr :a random QR code & Nothing happens & Nothing happens & Success \\ \hline
+     TT06 & User closes app, cleans all running app, and then opens the app again & - & The collected score should persist & The score persists & Success \\ \hline
+     
+ \end{longtable}

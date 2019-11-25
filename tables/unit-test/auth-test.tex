@@ -1,0 +1,22 @@
+\begin{longtable}{|c|X|X|X|X|X|}
+\caption{Unit test cases for authentication unit.} \label{table:authtest} \\
+\hline
+\multicolumn{6}{|c|}{\textbf{Unit : Authentication}}                                                                                                  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{ID} & \textbf{Test Case Description} & \textbf{Test Case Data} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Status} \\ \hline
+\endfirsthead
+\rowcolor[HTML]{C0C0C0} 
+\textbf{ID} & \textbf{Test Case Description} & \textbf{Test Case Data} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Status} \\ \hline
+\endhead
+     TL01       &  Login with valid username and password                              &   username: valid \newline password: valid                      &    User is logged in Successfully                      &      User is logged in Successfully                   &     Success            \\ \hline
+     TL02       &  Press login with empty username and password                             &  username: empty \newline password: empty                       &   User sees 'Fields cannot be empty' message                       &   User sees 'Fields cannot be empty' message                     &      Success           \\ \hline
+     TL03       &  Enter valid login credentials, turn off network connection and then log in                   &  username: valid \newline password: valid                       &   User gets 'Network Connection Error'                       &   Progress spinner spins infinitely               &   Failure \newline (Debug DL01 and run TL03 again)              \\ \hline
+    TL03        &    Enter valid login credentials, turn off network connection and then log in                             &    username: valid \newline password: valid                      &  User gets 'Network Connection Error'                         &   User gets 'Network Connection Error'                      &  Success               \\ \hline
+   TL04         &    User logs in with Facebook                            &     -                    &    User is logged in Successfully, details from Facebook are fetched                     &   User is logged in Successfully, details from Facebook are fetched                     &    Success             \\ \hline
+    TL05        &    User logs in with Google                            &      -                   &    User is logged in Successfully, details from Google are fetched                      &    User is logged in Successfully, details from Facebook are fetched                    &   Success              \\ \hline 
+   TL06         &    After being logged in, user closes the app, clears all running apps and opens app again                            &  -                       & User should directly see the Dashboard page                         &   User is navigated back to Login Page                     &   Failure \newline (Debug DL02 and run TL06 again)              \\ \hline
+      TL06         &    After being logged in, user closes the app, clears all running apps and opens app again                            &  -                       & User should directly see the Dashboard page                         &   User sees Dashboard page                     &   Success              \\ \hline
+      TR01         &    Register with valid email and username                            &  email: valid \newline username: valid  \newline password: valid                     & User account should be created and navigated to Dashboard                         &   User account should be created and navigated to Dashboard                     &   Success              \\ \hline
+      TR02         &    Submit one of the password field blank                           &  email: valid \newline username: valid   \newline password: blank                    & User should get 'Fields cannot be blank message'                         &   App crashes                     &   Failure (Debug case DR03 and run TR02 again)              \\ \hline
+            TR02         &    Submit one of the password field blank                           &  email: valid \newline username: valid   \newline password: blank                    & User should get 'Fields cannot be blank message'                         &   User should get 'Fields cannot be blank message'                     &   Success              \\ \hline
+\end{longtable}

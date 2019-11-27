@@ -8,12 +8,13 @@
 \rowcolor[HTML]{C0C0C0} 
 \textbf{ID} & \textbf{Test Case Description} & \textbf{Test Case Data} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Status} \\ \hline
 \endhead
-     TW01       &  Enter a search query in the search bar and tap search icon                   &   query: some valid string                      &    The rewards matching the typed query are displayed on map                      &      The rewards matching the typed query are displayed on map                   &     Success            \\ \hline
-     TW02 & Enter nothing (blank) in search query and hit search bar  & query: blank.  & Nothing happens.  & Nothing happens & Success \\ \hline
-     TW03 & Scan a QR code corresponding to a reward & qr: a valid treasure & The reward corresponding is shown and user can view the voucher code & The reward corresponding is shown and user can view the voucher code & Success \\ \hline
-     TW04 & Scan the same Reward again & qr: the QR that was already scanned & Nothing happens & Nothing happens & Success \\ \hline
-     TW05 & Scan an invalid (a random string QR) & qr :a random QR code & Nothing happens & Nothing happens & Success \\ \hline
+     TW01       &  Enter a search query in the search bar and tap search icon                   &   query: some valid string                      &    The rewards matching the typed query are displayed on map                      &      The rewards matching the typed query are displayed on map                   &     Success   (Figure \ref{fig:test-evidence-reward} (a) )         \\ \hline
+     TW02 & Enter nothing (blank) in search query and hit search bar  & query: blank.  & Nothing happens.  & Nothing happens & Success (Figure \ref{fig:test-evidence-reward} (b) ) \\ \hline
+     TW03 & Scan a QR code corresponding to a reward & qr: a valid treasure & The reward corresponding is shown and user can view the voucher code & The reward corresponding is shown and user can view the voucher code & Success (Figure \ref{fig:test-evidence-reward} (c) ) \\ \hline
+     TW04 & Scan the same Reward again & qr: the QR that was already scanned & Nothing happens & Nothing happens & Success (Figure \ref{fig:test-evidence-reward} (d) ) \\ \hline
+     TW05 & Scan an invalid (a random string QR) & qr :a random QR code & Nothing happens & Nothing happens & Success (Figure \ref{fig:test-evidence-reward} (e) ) \\ \hline
       TW06 & User closes app, cleans all running app, and then opens the app again & - & The collected reward should not appear again in list of rewards & The collected reward appears again in list of rewards & Failure (Debug DW01 and repeat again) \\ \hline
-     TW06 & User closes app, cleans all running app, and then opens the app again & - & The collected reward should not appear again in list of rewards & The collected reward should not appear again in list of rewards & Success \\ \hline
+  TW06 & User closes app, cleans all running app, and then opens the app again & - & The collected reward should not appear again in list of rewards & The collected reward does not appear again in list of rewards & Success (Figure \ref{fig:test-evidence-reward} (f) ) \\ \hline
      
+
  \end{longtable}

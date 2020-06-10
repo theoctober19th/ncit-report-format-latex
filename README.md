@@ -3,10 +3,12 @@ The LaTeX template for writing project reports to be submitted in Nepal College 
 
 I have written the template in simple LaTeX so it should compile in any TeX compiler you are use.
 
-Here is a preview of the title page:
+## Instructions
+There are several branches to this repo, each of which have different versions of the report.
+* branch: master. Contains only the title page.
+* branch: proposal - Contains the proposal report document
+* branch: midterm - Contains the mid-term report document
+* branch: final - Contains the final report document
 
-<object data="https://github.com/theoctober19th/NCIT-Report-Format-LaTeX/blob/master/preview.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/theoctober19th/NCIT-Report-Format-LaTeX/blob/master/preview.pdf">
-        <p><i>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/theoctober19th/NCIT-Report-Format-LaTeX/blob/master/preview.pdf">Download PDF</a>.</i></p>
-    </embed>
-</object>
+## Disclaimer
+Plagiarism will not be tolerated.

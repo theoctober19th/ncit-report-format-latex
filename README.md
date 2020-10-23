@@ -1,7 +1,7 @@
 # NCIT Report Format (LaTeX)
 The LaTeX template for writing project reports to be submitted in Nepal College of Information Technology (NCIT).
 
-I have written the template in simple LaTeX so it should compile in any TeX compiler you are use.
+I have written the template in simple LaTeX so it should compile in any TeX compiler you are using.
 
 ## Instructions
 There are several branches to this repo, each of which have different versions of the report.
